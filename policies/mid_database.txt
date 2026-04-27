@@ -1,7 +1,7 @@
 --- DAILY MERCHANT STATUS EXPORT ---
-MID: 100010001 | Merchant: Joe's Pizza | Status: CreditApp | Estimated SAR: $1,200
-MID: 100010002 | Merchant: Auto Fixers | Status: InstallApp | Estimated SAR: $3,400
-MID: 100010003 | Merchant: Main St Cafe | Status: Installed | Estimated SAR: $2,500
-MID: 100010004 | Merchant: City Cleaners | Status: CreditApp | Estimated SAR: $800
-MID: 100010005 | Merchant: Tech Store | Status: Installed | Estimated SAR: $5,100
+MID: 100010001 | Merchant: Joe's Pizza | Status: CreditApp | Estimated SAR: $1,200 | Signed: N/A | Live: N/A
+MID: 100010002 | Merchant: Auto Fixers | Status: InstallApp | Estimated SAR: $3,400 | Signed: 2026-03-15 | Live: N/A
+MID: 100010003 | Merchant: Main St Cafe | Status: Installed | Estimated SAR: $2,500 | Signed: 2026-03-01 | Live: 2026-03-10
+MID: 100010004 | Merchant: City Cleaners | Status: CreditApp | Estimated SAR: $800 | Signed: N/A | Live: N/A
+MID: 100010005 | Merchant: Tech Store | Status: Installed | Estimated SAR: $5,100 | Signed: 2026-02-15 | Live: 2026-02-28
 ------------------------------------
