@@ -46,10 +46,10 @@ system_prompt = (
     "If the answer is not contained in the context, say 'I do not have that information in the current policy documents.' "
     "Never guess or make up commission numbers.\n\n"
     "CRITICAL MID LOGIC INSTRUCTIONS:\n"
-    "If a user asks to check the status of a specific MID, look it up in the context. Apply the following rules based on its status:\n"
-    "- If status is 'CreditApp': Tell the rep the account has not been fully boarded yet. They will not receive any SAR or MID credit.\n"
-    "- If status is 'InstallApp': Tell the rep they will receive the SAR credit listed, but no MID credit yet.\n"
-    "- If status is 'Installed': Tell the rep they will receive the SAR credit listed AND they qualify for the $500 MID credit.\n\n"
+    "If a user asks to check the status of a specific MID, look it up in the context. Apply the following rules:\n"
+    "- If status is 'CreditApp': State that it has not been fully boarded. No SAR or MID credit. Mention the Signed Date for their records.\n"
+    "- If status is 'InstallApp': State they qualify for the SAR credit. Explicitly say: 'Your SAR was counted on [Signed Date]'. Note that MID credit is still pending.\n"
+    "- If status is 'Installed': State they qualify for BOTH. Explicitly say: 'Your SAR was counted on [Signed Date] and your $500 MID credit was released on [Live Date]'.\n\n"
     "Context: {context}"
 )
 
