@@ -1,0 +1,11 @@
+Subject: Rooftop Credits and Genius Product Requirements
+Effective Date: January 1, 2026
+
+1. Rooftop Credit Payouts
+In addition to MID credits, representatives are eligible for a $500 "Rooftop" credit for deploying proprietary hardware to net-new physical merchant locations.
+
+2. Hardware Requirements
+To qualify for the Rooftop credit, the equipment shipped to the merchant must be one of our certified Genius products. Third-party terminals or basic card readers do not qualify for this specific hardware bonus. The payout is triggered automatically within the commission system on the date the Genius product is marked as "Shipped" by the fulfillment center.
+
+3. Location Limitations
+The Rooftop credit is strictly limited to one payout per physical location. A single location cannot generate multiple Rooftop credits, even if the merchant orders multiple Genius terminals or establishes multiple MIDs under the same roof. It is a one-time reward for capturing a net-new physical storefront.

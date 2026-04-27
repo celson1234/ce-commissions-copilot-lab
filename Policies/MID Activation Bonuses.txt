@@ -1,0 +1,11 @@
+Subject: MID Credits and Install Status Requirements
+Effective Date: January 1, 2026
+
+1. MID Credit Payouts
+Sales representatives are eligible to receive a flat $500 bonus credit for every new, active Merchant ID (MID) brought onto the platform.
+
+2. Activation Triggers (Install Status)
+To prevent payouts on dormant accounts, the $500 MID credit is not released when the account is approved or when the contract is signed. The credit is only issued when the MID officially reaches Install status.
+
+3. Definition of Install Status
+A MID is only flagged with an Install status once the merchant has successfully batched at least $10.00 worth of live transactions through the gateway. Test transactions or failed authorizations do not count toward this threshold. Once the $10.00 batch clears, the status automatically updates, and the $500 credit is added to the representative's upcoming commission cycle.
