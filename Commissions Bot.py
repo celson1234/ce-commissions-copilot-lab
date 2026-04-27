@@ -76,7 +76,10 @@ if user_input := st.chat_input("E.g., When do I get my $500 MID credit?"):
     response = rag_chain.invoke({"input": user_input})
     answer = response["answer"]
 
+    # Escape dollar signs so Streamlit doesn't render them as math equations
+    safe_answer = answer.replace("$", "\\$")
+
     # Display the AI response
     with st.chat_message("assistant"):
-        st.markdown(answer)
-    st.session_state.messages.append({"role": "assistant", "content": answer})
+        st.markdown(safe_answer)
+    st.session_state.messages.append({"role": "assistant", "content": safe_answer})
