@@ -7,6 +7,7 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
+from langchain.retrievers.multi_query import MultiQueryRetriever
 
 # --- 1. SETUP & CONFIGURATION ---
 st.title("💬 Global Payments Commission Co-Pilot")
@@ -53,8 +54,11 @@ prompt = ChatPromptTemplate.from_messages([
 ])
 
 # Create the retrieval chain
+advanced_retriever = MultiQueryRetriever.from_llm(
+    retriever=vector_store.as_retriever(), llm=llm
+)
 question_answer_chain = create_stuff_documents_chain(llm, prompt)
-rag_chain = create_retrieval_chain(vector_store.as_retriever(), question_answer_chain)
+rag_chain = create_retrieval_chain(advanced_retriever, question_answer_chain)
 
 # --- 4. STREAMLIT CHAT INTERFACE ---
 # Initialize chat history
