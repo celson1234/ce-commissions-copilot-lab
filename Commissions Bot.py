@@ -45,6 +45,11 @@ system_prompt = (
     "Use the provided context to answer the user's question accurately. "
     "If the answer is not contained in the context, say 'I do not have that information in the current policy documents.' "
     "Never guess or make up commission numbers.\n\n"
+    "CRITICAL MID LOGIC INSTRUCTIONS:\n"
+    "If a user asks to check the status of a specific MID, look it up in the context. Apply the following rules based on its status:\n"
+    "- If status is 'CreditApp': Tell the rep the account has not been fully boarded yet. They will not receive any SAR or MID credit.\n"
+    "- If status is 'InstallApp': Tell the rep they will receive the SAR credit listed, but no MID credit yet.\n"
+    "- If status is 'Installed': Tell the rep they will receive the SAR credit listed AND they qualify for the $500 MID credit.\n\n"
     "Context: {context}"
 )
 
@@ -76,7 +81,7 @@ if user_input := st.chat_input("E.g., When do I get my $500 MID credit?"):
     st.chat_message("user").markdown(user_input)
     st.session_state.messages.append({"role": "user", "content": user_input})
 
-    # Run the RAG chain to get the answer
+    # Run the RAG
     response = rag_chain.invoke({"input": user_input})
     answer = response["answer"]
 
